@@ -20,6 +20,7 @@ public class main {
     public static void main(String[] args) {
 
         InputFileReder inputFileReder = new InputFileReder();
+        CalculateArithmaticExpression cae = new CalculateArithmaticExpression();
         List<String> lineList = new ArrayList();
 
         System.out.println("****************************************************");
@@ -32,6 +33,8 @@ public class main {
         } catch (IOException ex) {
             Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+        cae.calculate();
 
     }
 
